@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var twoSum = function (nums, target) {
+        var arr = [];
+        for (var i = 0; i < nums.length; i++) {
+          for (var j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] === target) {
+              arr.push(i);
+              arr.push(j);
+            }
+          }
+        }
+        console.log(arr);
+      };
+      twoSum([3, 2, 4], 6);
+    </script>
+  </body>
+</html>
